@@ -151,3 +151,17 @@ Spark/Flink analytics
 Grafana, Power BI, or Streamlit dashboard
 
 Instead of storing large raw video files, the system stores compact structured records such as counts, events, timestamps, and calculated metrics.
+
+## 5 Instruction to run the app
+
+Open Powershell]
+Run:
+- 1
+```text
+git clone https://github.com/DavideTomei/IoT-Big-Data.git
+```
+-2
+
+```text
+
+```
