@@ -153,15 +153,131 @@ Grafana, Power BI, or Streamlit dashboard
 Instead of storing large raw video files, the system stores compact structured records such as counts, events, timestamps, and calculated metrics.
 
 ## 5 Instruction to run the app
+# 5.1. Clone the GitHub repository
 
-Open Powershell]
-Run:
-- 1
-```text
+Open **PowerShell** and go to the folder where you want to store the project.
+
+Example:
+
+```powershell
+cd "C:\Users\tomeid\Documents"
+```
+
+Clone the repository:
+
+```powershell
 git clone https://github.com/DavideTomei/IoT-Big-Data.git
 ```
--2
+
+Enter the project folder:
+
+```powershell
+cd IoT-Big-Data
+```
+
+---
+
+## 5.2. Create a Python virtual environment
+
+Create a virtual environment:
+
+```powershell
+python -m venv .venv
+```
+
+Activate it:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+---
+
+## 5.3. Install the required packages
+
+Install the dependencies:
+
+```powershell
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+If `requirements.txt` is missing, install the dependencies manually:
+
+```powershell
+python -m pip install opencv-python ultralytics numpy pandas matplotlib yt-dlp certifi
+```
+
+## 5.4. Calibrate the bar area and entrance line
+
+Before running the live extraction, the bar area and entrance line must be calibrated.
+
+Run:
+
+```powershell
+python ".\IoT project_bondi_chaweng_bar_occupancy.py" --calibrate
+```
+
+During calibration:
+
+```text
+1. Draw the bar sitting/stopping area using 4 clicks.
+2. Press Enter to save the bar area.
+3. Draw the bar entrance line using 2 clicks.
+4. Press Enter to save the entrance line.
+5. Press q or Esc to cancel if needed.
+```
+I advice to draw the line for the bar entries more deep on the bar than straight on the side walk to have a better detectation and avoid false entries counting
+## 5.5. Run the live extraction
+
+Run:
+
+```powershell
+python ".\IoT project_bondi_chaweng_bar_occupancy.py"
+```
+
+The application should open the livestream and display the processed video.
+
+The live window shows:
 
 ```text
 
+detected people
+bar area
+bar entrance line
+total people detected by camera
+bar entries
+bar retention
+estimated bar occupancy
+activity index
+observed revenue
+projected daily revenue
 ```
+
+To stop the live extraction:
+
+```text
+Press q
+Press Esc
+or close the OpenCV window
+```
+
+## 5.6. Analyze the generated data
+
+After stopping the live extraction, run:
+
+```powershell
+python ".\IoT project_bondi_chaweng_bar_occupancy.py" --analyze
+```
+
+The analysis uses the data from the selected/current output folder and generates:
+
+```text
+summary_report.txt
+measurements.csv
+events.csv
+livestream_data.sqlite
+activity_index_over_time.png
+bar_revenue_estimate.png
+event_counts.png
+```
+
