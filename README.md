@@ -214,7 +214,7 @@ Before running the live extraction, the bar area and entrance line must be calib
 Run:
 
 ```powershell
-python ".\IoT project_bondi_chaweng_bar_occupancy.py" --calibrate
+python ".\IoT_project_bondi_chaweng_bar_occupancy.py" --calibrate
 ```
 
 During calibration:
@@ -232,7 +232,7 @@ I advice to draw the line for the bar entries more deep on the bar than straight
 Run:
 
 ```powershell
-python ".\IoT project_bondi_chaweng_bar_occupancy.py"
+python ".\IoT_project_bondi_chaweng_bar_occupancy.py"
 ```
 
 The application should open the livestream and display the processed video.
@@ -266,7 +266,7 @@ or close the OpenCV window
 After stopping the live extraction, run:
 
 ```powershell
-python ".\IoT project_bondi_chaweng_bar_occupancy.py" --analyze
+python ".\IoT_project_bondi_chaweng_bar_occupancy.py" --analyze
 ```
 
 The analysis uses the data from the selected/current output folder and generates:
