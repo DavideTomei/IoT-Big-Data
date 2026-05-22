@@ -1,0 +1,39 @@
+Bondi Chaweng Bar Livestream Analytics - Summary
+==========================================================
+Number of measurement rows: 19
+Time range: 2026-05-22T16:07:33+02:00 to 2026-05-22T16:09:06+02:00
+Average people count: 23.79
+Maximum people count: 36
+Average activity index: 55.13
+Maximum activity index: 67.00
+Bar entries detected: 5
+Total people detected by camera: 9
+Final total bar retention: 55.56%
+Estimated bar entries per hour: 193.55
+Maximum estimated seated people in the bar: 32
+Observed bar revenue: EUR 35.00
+Projected daily bar revenue: EUR 16258.20
+
+Event summary:
+event_type
+BAR_PASSERBY_DETECTED    10
+BAR_ENTRY_DETECTED        5
+BAR_OCCUPANCY_HIGH        2
+HIGH_BAR_RETENTION        2
+LOW_BAR_RETENTION         1
+HIGH_ACTIVITY             1
+CROWD_DETECTED            1
+
+Generated chart files:
+- activity_index_over_time.png
+- people_bar_seated_entries_passersby.png
+- bar_retention_rate.png
+- bar_entries_per_hour_estimate.png
+- bar_revenue_estimate.png
+- event_counts.png
+
+Big Data context:
+The application converts raw video frames into compact structured time-series rows and event records. In a larger IoT pipeline, many camera nodes could publish the same schema through MQTT or Kafka. The data could then be stored in a data lake, processed by Spark/Flink, and visualized in dashboards for tourism activity monitoring, venue capacity analysis, footfall-to-customer conversion, and local business planning.
+
+Privacy note:
+The system stores aggregate counts and events, not face identities or raw personal images. This is more privacy-preserving than storing continuous video.

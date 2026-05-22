@@ -1,0 +1,33 @@
+{
+  "frame_width": 1600,
+  "frame_height": 900,
+  "bar_seating_rect_norm": [
+    [
+      0.161875,
+      0.11888888888888889
+    ],
+    [
+      0.971875,
+      0.22333333333333333
+    ],
+    [
+      0.955625,
+      0.6
+    ],
+    [
+      0.1425,
+      0.23555555555555555
+    ]
+  ],
+  "bar_entry_line_norm": [
+    [
+      0.154375,
+      0.22555555555555556
+    ],
+    [
+      0.950625,
+      0.51
+    ]
+  ],
+  "passerby_counting_method": "total_unique_detected_people_from_camera"
+}

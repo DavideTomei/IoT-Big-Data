@@ -1,0 +1,23 @@
+timestamp,stream_name,event_type,severity,value,description
+2026-05-22T16:07:34+02:00,bondi_chaweng_samui,BAR_OCCUPANCY_HIGH,medium,19,Estimated current bar occupancy exceeded the configured threshold.
+2026-05-22T16:07:35+02:00,bondi_chaweng_samui,BAR_PASSERBY_DETECTED,low,1,A unique detected person was counted once as part of the total people detected by the camera / potential customers.
+2026-05-22T16:07:35+02:00,bondi_chaweng_samui,BAR_PASSERBY_DETECTED,low,2,A unique detected person was counted once as part of the total people detected by the camera / potential customers.
+2026-05-22T16:07:35+02:00,bondi_chaweng_samui,BAR_PASSERBY_DETECTED,low,3,A unique detected person was counted once as part of the total people detected by the camera / potential customers.
+2026-05-22T16:07:35+02:00,bondi_chaweng_samui,BAR_PASSERBY_DETECTED,low,4,A unique detected person was counted once as part of the total people detected by the camera / potential customers.
+2026-05-22T16:07:35+02:00,bondi_chaweng_samui,BAR_PASSERBY_DETECTED,low,5,A unique detected person was counted once as part of the total people detected by the camera / potential customers.
+2026-05-22T16:07:35+02:00,bondi_chaweng_samui,BAR_PASSERBY_DETECTED,low,6,A unique detected person was counted once as part of the total people detected by the camera / potential customers.
+2026-05-22T16:07:35+02:00,bondi_chaweng_samui,BAR_PASSERBY_DETECTED,low,7,A unique detected person was counted once as part of the total people detected by the camera / potential customers.
+2026-05-22T16:07:35+02:00,bondi_chaweng_samui,BAR_PASSERBY_DETECTED,low,8,A unique detected person was counted once as part of the total people detected by the camera / potential customers.
+2026-05-22T16:07:35+02:00,bondi_chaweng_samui,BAR_PASSERBY_DETECTED,low,9,A unique detected person was counted once as part of the total people detected by the camera / potential customers.
+2026-05-22T16:07:35+02:00,bondi_chaweng_samui,LOW_BAR_RETENTION,medium,0.0,Overall bar retention is 0.00%.
+2026-05-22T16:07:42+02:00,bondi_chaweng_samui,BAR_ENTRY_DETECTED,medium,1,A tracked person was counted as entering after the lower-body reference point crossed the selected bar entry line into the bar side.
+2026-05-22T16:07:43+02:00,bondi_chaweng_samui,BAR_ENTRY_DETECTED,medium,2,A tracked person was counted as entering after the lower-body reference point crossed the selected bar entry line into the bar side.
+2026-05-22T16:07:45+02:00,bondi_chaweng_samui,HIGH_ACTIVITY,high,70.0,Activity index reached 70.0.
+2026-05-22T16:07:45+02:00,bondi_chaweng_samui,CROWD_DETECTED,high,40,Detected 40 people in the scene.
+2026-05-22T16:07:54+02:00,bondi_chaweng_samui,BAR_ENTRY_DETECTED,medium,3,A tracked person was counted as entering after the lower-body reference point crossed the selected bar entry line into the bar side.
+2026-05-22T16:07:54+02:00,bondi_chaweng_samui,HIGH_BAR_RETENTION,medium,33.33,Overall bar retention reached 33.33%.
+2026-05-22T16:08:34+02:00,bondi_chaweng_samui,BAR_OCCUPANCY_HIGH,medium,24,Estimated current bar occupancy exceeded the configured threshold.
+2026-05-22T16:08:49+02:00,bondi_chaweng_samui,BAR_ENTRY_DETECTED,medium,4,A tracked person was counted as entering after the lower-body reference point crossed the selected bar entry line into the bar side.
+2026-05-22T16:08:54+02:00,bondi_chaweng_samui,HIGH_BAR_RETENTION,medium,44.44,Overall bar retention reached 44.44%.
+2026-05-22T16:09:02+02:00,bondi_chaweng_samui,BAR_ENTRY_DETECTED,medium,5,A tracked person was counted as entering after the lower-body reference point crossed the selected bar entry line into the bar side.
+2026-05-22T16:09:08+02:00,bondi_chaweng_samui,BAR_PASSERBY_DETECTED,low,10,A unique detected person was counted once as part of the total people detected by the camera / potential customers.
