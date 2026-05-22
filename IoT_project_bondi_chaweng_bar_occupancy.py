@@ -1934,9 +1934,29 @@ def main() -> None:
     else:
         args = parser.parse_args()
 
-    if args.analyze:
-        run_analysis(args.output_dir, business_hours_per_day=args.business_hours_per_day)
-        return
+if args.analyze:
+    output_path = Path(args.output_dir)
+
+    # If the base output folder does not contain measurements.csv,
+    # automatically find the latest run_* folder.
+    if not (output_path / "measurements.csv").exists():
+        run_folders = [
+            p for p in output_path.glob("run_*")
+            if p.is_dir() and (p / "measurements.csv").exists()
+        ]
+
+        if not run_folders:
+            raise FileNotFoundError(
+                f"No measurements.csv found in {output_path} or in any run_* subfolder. "
+                "Run live extraction first."
+            )
+
+        latest_run = max(run_folders, key=lambda p: p.stat().st_mtime)
+        print(f"[info] Automatically analyzing latest run folder: {latest_run}")
+        output_path = latest_run
+
+    run_analysis(output_path, business_hours_per_day=args.business_hours_per_day)
+    return
 
     if args.calibrate:
         calibrate_rois(args.source, args.roi_file, args.width)
