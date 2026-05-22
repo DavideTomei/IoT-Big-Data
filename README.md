@@ -281,3 +281,29 @@ bar_revenue_estimate.png
 event_counts.png
 ```
 
+
+## 5.7. Uploading results to GitHub
+
+After running the project and generating results, add the files to GitHub:
+
+```powershell
+git status
+git add .
+git commit -m "Add livestream bar analytics code and results"
+git push
+```
+
+The repository should include:
+
+```text
+Python code
+Jupyter Notebook
+requirements.txt
+README.md
+measurements.csv
+events.csv
+livestream_data.sqlite
+summary_report.txt
+analysis charts
+```
+
