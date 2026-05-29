@@ -129,7 +129,7 @@ Tracking and region-of-interest analytics
     ↓
 Event generation
     ↓
-CSV and SQLite storage
+CSV storage
     ↓
 Analysis and dashboard/reporting
 ```
