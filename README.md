@@ -201,11 +201,6 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-If `requirements.txt` is missing, install the dependencies manually:
-
-```powershell
-python -m pip install opencv-python ultralytics numpy pandas matplotlib yt-dlp certifi
-```
 
 ## 5.4. Calibrate the bar area and entrance line
 
